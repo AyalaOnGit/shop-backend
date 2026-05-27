@@ -64,13 +64,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+
 app.UseCors("AllowAngular");
 
 app.UseErrorHandlingMiddleware();
 
 app.UseRatingMiddleware();
-
-app.UseStaticFiles();
 
 app.UseAuthorization();
 
